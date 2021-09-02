@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import { v4 as uuidv4 } from 'uuid';
-import CssModule from './index.css';
-import ContactForm from './Components/phonebook.js'
+import { v4 as uuidv4 } from "uuid";
+import CssModule from "./index.css";
+import ContactForm from "./Components/phonebook.js";
 import ContactList from "./Components/listContact";
 import Filter from "./Components/filterContacts";
 
@@ -69,9 +69,7 @@ export default class App extends React.Component {
 
         <ContactForm onAddContact={this.addContact} />
         <h2>Contacts</h2>
-        {visibleContacts.length > 1 && (
-          <Filter value={filter} onChangeFilter={this.changeFilter} />
-        )}
+        <Filter value={filter} onChangeFilter={this.changeFilter} />
         {visibleContacts.length > 0 && (
           <ContactList
             contacts={visibleContacts}
@@ -81,4 +79,4 @@ export default class App extends React.Component {
       </div>
     );
   }
-};
+}
