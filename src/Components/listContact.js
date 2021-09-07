@@ -8,7 +8,7 @@ const ListContact = ({ contacts, onRemoveContact }) => (
         {contact.name + ":" + contact.number}
         {
           <button
-            class='button_delete'
+            className ='button_delete'
             type="button"
             name="delete"
             onClick={() => onRemoveContact(contact.id)}

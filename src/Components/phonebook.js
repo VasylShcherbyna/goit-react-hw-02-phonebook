@@ -58,6 +58,4 @@ class Phonebook extends React.Component {
 export default Phonebook;
 Phonebook.propTypes = {
   onAddContact: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
 };

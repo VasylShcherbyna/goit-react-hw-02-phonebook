@@ -70,7 +70,7 @@ export default class App extends React.Component {
         <ContactForm onAddContact={this.addContact} />
         <h2>Contacts</h2>
         <Filter value={filter} onChangeFilter={this.changeFilter} />
-        {visibleContacts.length > 0 && (
+        {visibleContacts.length && (
           <ContactList
             contacts={visibleContacts}
             onRemoveContact={this.removeContact}
